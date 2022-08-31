@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/sass/_variables.scss">
     <title>Soleil Couchant</title>
 </head>
-<body style="background-image: url("assets/sea-205717_1920.jpg");">
+<body style="background-image: url("../assets/sea-205717_1920.jpg); background")>
     <header>
         <?php
             require_once "navbar.php";
@@ -45,7 +45,7 @@ INNER JOIN vendeurs ON produits.vendeur_id = vendeurs.id_vendeur";
 //requete sur la table vendeurs pour afficher tous les produits du vendeur killiki
 //SELECT * FROM `vendeurs` LEFT JOIN produits ON vendeurs.id_vendeur = produits.vendeur_id WHERE vendeur.nom_vendeur = "killiki"
 ?>
-<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+<div class="card text-white bg-secondary mb-3" style="max-width: 20rem">
         <div class="card-body">
             <h4 class="card-title">
                 <?= $produit['nom_produit']; ?>
